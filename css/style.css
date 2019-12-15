@@ -1,0 +1,381 @@
+@font-face {
+    font-family: 'Iris';
+    src: local('Iris'), url('../webfonts/iris.ttf') format('truetype');
+}
+
+/*****************************************
+*   Body
+******************************************/
+
+h1, h2, h3, h4, h5, p, a{
+    font-family: 'Iris';
+    color: #ffffff;
+    text-shadow: 1px 1px 1px black, 1px 1px 1px black;
+}
+
+a {
+    color: #666666;
+}
+
+a:hover {
+    color: #006699;
+    font-weight: bold;
+    text-decoration-line: none;
+}
+
+body{
+    background-color: #cccccc;
+    color: white;
+}
+
+/*****************************************
+*   Header
+ *****************************************/
+.header {
+    position: relative;
+    background-color: #000000;
+    color: #bd2130;
+    min-height: 50vh;
+}
+
+
+.header>.logo {
+    position: absolute;
+    top: 15%;
+    z-index: 10;
+}
+
+
+.header h1 {
+    border: 5px solid white;
+    padding: 4% 0;
+    color: white;
+    font-size: 75px;
+    font-weight: 700;
+    line-height: 2;
+    top:10%;
+}
+
+.header h2 {
+    background-color: white;
+    color: #000000;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 2;
+    width: 60%;
+    margin: 0 auto;
+    padding: 12px 0;
+}
+
+.header img {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.header p {
+    position: absolute;
+    z-index: 10;
+    color: #bd2130;
+    bottom: 10%;
+}
+
+/*****************************************
+*   Navigation
+ *****************************************/
+.nav{
+    position: absolute;
+    bottom: 20%;
+    z-index: 10;
+}
+
+.nav-item{
+    width: 100px;
+    height: 100px;
+    margin: 20px 30px;
+    border-radius: 50%;
+}
+
+.item-wrap, .item-info{
+   /* background-color: #533f03;*/
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.item-wrap{
+    box-shadow: 0 0 0 10px gray, inset 0 0 0 3px black;
+}
+
+.item-info > div {
+    position: absolute;
+}
+
+.item-info-front, .item-info-back{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    -webkit-transition: all 0.6s ease-in-out;
+    -moz-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
+    -ms-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+}
+
+.item-info-back{
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+.item-icon{
+    position: absolute;
+    width: 100%;
+    top: 17%;
+    color: white;
+    font-size: 60px;
+}
+
+.item-text{
+    position: absolute;
+    width: 130%;
+    left: -15px;
+    top: 25%;
+    font-size: 20px;
+    color: gray;
+}
+
+.item-text:hover{
+    color: #006699;
+    font-weight: 700;
+}
+
+.nav-item:hover .item-info-front{
+    opacity: 0;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -o-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+}
+
+.nav-item:hover .item-info-back{
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    pointer-events: auto;
+}
+/***End Navigation************************/
+
+/*****************************************
+*   Navigation vMenu
+******************************************/
+.nav-2 {
+    position: fixed;
+    display: none;
+    width: 5%;
+    bottom: 0;
+    right: 0;
+}
+
+.nav-2 > .nav-item {
+    background-color: #000000;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.nav-2 > .nav-item > a{
+    color: white;
+    font-size: 18px;
+}
+
+.nav-2 > .nav-item > a:hover{
+    color: #006699;
+}
+/***End Navigation vMenu******************/
+
+.gradient{
+    position: absolute;
+    width: 100%;
+    /*background: url(../images/fon.png) repeat fixed, linear-gradient(to bottom,#333333,#cccccc);*/
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9),rgba(153, 153, 153, 0.7)), url(../images/fon2.png) repeat;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    filter: alpha(opacity=30);
+}
+
+/*****************************************
+*   Common in blocks
+******************************************/
+.block-content {
+    margin: 5% 0 0 -1%;
+}
+
+.block-content > div > .block-content-header {
+    padding: 3%;
+    color: white;
+}
+
+.block-content > div > div > h2 {
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 10px double black;
+    border-bottom: 5px double black;
+    font-weight: 900;
+}
+
+.block-content > div > div > h4 {
+    margin: 6% 0;
+    text-decoration-line: underline;
+}
+
+
+/*****************************************
+*   About Block
+ *****************************************/
+#about {
+    /*background-color: #533f03;*/
+    min-height: 100vh;
+}
+
+
+/*****************************************
+*   Skills Block
+ *****************************************/
+#skills {
+
+    min-height: 100vh;
+}
+
+#skills > .skills-content > .block-content-progress {
+
+}
+
+#skills > .skills-content > .block-content-progress > .progress {
+    background-color: #cccccc;
+    border-radius: 4px 4px;
+    border: 1px solid black;
+    margin: 0 0 5% 5%;
+    height: 20px;
+}
+
+#skills > .skills-content > .block-content-progress > .progress > .progress-bar{
+    background: linear-gradient(to right,#006699,#666666);
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: right;
+    border-right: 1px solid black;
+}
+
+
+/*****************************************
+*   Experience Block
+ *****************************************/
+#experience {
+    /*background-color: #1e7e34;*/
+    min-height: 100vh;
+}
+
+#experience .experience-row {
+    padding: 3% 0;
+}
+
+#experience .experience-row .experience-date {
+    padding: 0 5%;
+}
+
+#experience .experience-row .experience-date > .experience-date-block {
+    background-color: black;
+    padding: 1%;
+}
+
+#experience .experience-row .experience-date > .experience-date-block:after {
+    content: '';
+    position: absolute;
+    right: -20px; top: 10px;
+    border: 10px solid transparent;
+    border-left: 10px solid black;
+}
+
+#experience .experience-row .experience-work {
+
+}
+
+#experience .experience-row .experience-work > .experience-work-block {
+    border: 2px solid black;
+    color: black
+}
+
+#experience .experience-row .experience-work > .experience-work-block:hover {
+    border: 2px solid #006699;
+}
+
+#experience .experience-row .experience-work > .experience-work-block > p {
+    margin: 5%;
+}
+
+#experience .experience-row .experience-work > .experience-work-block-info {
+    color: black
+}
+
+#experience .experience-show > #showLess, #showMore {
+    margin: 5px 1%;
+    border: 2px solid black;
+    color: black;
+}
+
+#experience .experience-show > #showLess > p, #showMore > p {
+    margin: 5%;
+}
+
+#experience .experience-show > #showLess > p:hover, #showMore > p:hover {
+    color:#006699;
+}
+
+#experience .experience-show > #showLess:hover, #showMore:hover {
+    background-color: black;
+}
+
+#experience #experience-education {
+    display: none;
+}
+
+    /*****************************************
+    *   Examples Block
+     *****************************************/
+#examples {
+    /*background-color: #062c33;*/
+}
+
+#cripto {
+
+}
+
+#cripto > .row > .block-content-progress > .progress {
+    background-color: #cccccc;
+    border-radius: 4px 4px;
+    border: 1px solid black;
+    margin: 0 0 5% 5%;
+    height: 20px;
+}
+
+#cripto > .row > .block-content-progress > .progress > .progress-bar{
+    background: linear-gradient(to right,#006699,#666666);
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: right;
+    border-right: 1px solid black;
+}
