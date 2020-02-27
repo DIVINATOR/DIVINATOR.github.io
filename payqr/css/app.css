@@ -1,0 +1,22 @@
+
+body {
+    font-family: "Open Sans",Helvetica,Arial,sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1.41;
+}
+
+.jumbotron {
+    background: none;
+}
+
+.block-0 {
+    padding: 12.5px 0;
+}
+
+.block-1 {
+    background: rgb(218, 245, 204) none repeat scroll 0% 0%;
+}
+.block-2 {
+    padding: 30px;
+}
