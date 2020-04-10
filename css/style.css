@@ -3,6 +3,8 @@
     src: local('Iris'), url('../webfonts/iris.ttf') format('truetype');
 }
 
+
+
 /*****************************************
 *   Body
 ******************************************/
@@ -285,7 +287,7 @@ body{
  *****************************************/
 #experience {
     /*background-color: #1e7e34;*/
-    min-height: 100vh;
+    /*min-height: 100vh;*/
 }
 
 #experience .experience-row {
@@ -357,6 +359,7 @@ body{
      *****************************************/
 #examples {
     /*background-color: #062c33;*/
+    min-height: 100vh;
 }
 
 #cripto {

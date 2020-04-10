@@ -1,0 +1,9 @@
+io.divinator.wgapi.client
+io.divinator.wgapi.entity
+io.divinator.wgapi.entity.wgn.accounts
+io.divinator.wgapi.entity.wgn.servers
+io.divinator.wgapi.entity.wgn.wargag
+io.divinator.wgapi.entity.wgn.wgtv
+io.divinator.wgapi.entity.wot.auth
+io.divinator.wgapi.method.wgn
+io.divinator.wgapi.method.wot

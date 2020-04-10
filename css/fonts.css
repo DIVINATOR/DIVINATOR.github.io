@@ -1,0 +1,4 @@
+@font-face {
+    font-family: 'Iris';
+    src: local('Iris'), url('../webfonts/iris.ttf') format('truetype');
+}
